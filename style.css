@@ -31,3 +31,16 @@
   margin-top: 20px;
   box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
 }
+
+.btn {
+  height: 40px;
+  width: 60px;
+  background-color: white;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.chosen-hero {
+  color: white;
+}
