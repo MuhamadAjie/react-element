@@ -32800,7 +32800,7 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"app.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"app.jsx":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -32831,20 +32831,20 @@ var heroes = [{
 
 var Cards = function Cards(props) {
   // child component => nerima props
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: "card"
-  }, [_react.default.createElement("img", {
+  }, /*#__PURE__*/_react.default.createElement("img", {
     className: "image",
     src: props.imgSrc
-  }), _react.default.createElement("h1", {}, props.name), _react.default.createElement("h2", {}, props.age), _react.default.createElement("h2", {}, props.city)]);
+  }), /*#__PURE__*/_react.default.createElement("h1", null, props.name), /*#__PURE__*/_react.default.createElement("h2", null, props.age), /*#__PURE__*/_react.default.createElement("h3", null, props.city));
 };
 
 var App = function App() {
   // parent component => ngirim props
-  return _react.default.createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, heroes.map(function (hero) {
-    return _react.default.createElement(Cards, {
+    return /*#__PURE__*/_react.default.createElement(Cards, {
       name: hero.name,
       age: hero.age,
       city: hero.city,
@@ -32983,7 +32983,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56830" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58014" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -33159,5 +33159,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
-//# sourceMappingURL=/app.c328ef1a.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.jsx"], null)
+//# sourceMappingURL=/app.bb735868.js.map
